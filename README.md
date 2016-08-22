@@ -1,2 +1,2 @@
 # AIZU ONLINE JUDGEでの解答用リポジトリ
-Rubyを使用
+Ruby,C,Pythonの練習用
