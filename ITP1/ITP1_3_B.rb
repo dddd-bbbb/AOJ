@@ -3,9 +3,7 @@ i = 1
 
 while true
   n = gets.to_i
-  if n == 0
-    break
-  end
+  break if n == 0
   input_numbers.push(n)
 end
 
