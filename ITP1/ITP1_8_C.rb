@@ -9,4 +9,4 @@ while (input_str = gets) do
   end
 end
 
-count_hash.each_key { |key| puts "#{key} : #{count_hash[key]}" }
+count_hash.each { |key, value| puts "#{key} : #{value}" }
