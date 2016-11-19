@@ -4,7 +4,7 @@ while true do
 
   gets.to_i.times do
     h = gets.to_i
-    str = str[h,str.length] + str[0,h]
+    str = str[h..-1] + str[0..h-1]
   end
 
   puts str
