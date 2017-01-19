@@ -1,20 +1,20 @@
-#include "stdio.h"
-int main(void){
-  int n;
+#include<stdio.h>
 
-  scanf("%d\n", &n);
-  int ary_num[n];
+int main() {
+  int i, j, n;
+  int x[100];
 
-  int i, j;
-
-  for(i = 0; i < n; i++){
-    scanf("%d", &ary_num[i]);
+  scanf("%d", &n);
+  for(i = 0; i < n; i++)
+    scanf("%d", &x[i]);
+  for(j = n - 1; j >= 0; j--) {
+    if (j == 0){
+      printf("%d", x[j]);
+      break;
+    }
+    printf("%d ", x[j]);
   }
+  printf("\n");
 
-  for(j = n - 1; j > 0; j--){
-    printf("%d ", ary_num[j]);
-  }
-
-  printf("%d\n", ary_num[0]);
   return 0;
 }
